@@ -20,7 +20,6 @@
        
        
         .logo{
-          
           margin: 0;
         }
         .header__nav ul{
@@ -61,8 +60,7 @@
         width: 50%;
     }
     &__overlayDiv{
-      background-color: $footer-color;
-      color: set-text-color($footer-color);
+     @include set-background-color($footer-color);
         text-align: start;
         width: 60%;
         padding: 20px 0 0 20px;

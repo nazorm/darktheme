@@ -14,5 +14,13 @@ $link-color : blue;
     @return $black-color;
 }@else{
 @return $white-color
-}
+};
+};
+
+
+//set background color
+
+@mixin set-background-color($color) {
+   background-color: $color;
+   color: set-text-color($color)
 }
