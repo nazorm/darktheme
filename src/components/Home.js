@@ -14,6 +14,7 @@ import facebookIcon from "../images/desktop/icon-facebook.svg";
 import instagramIcon from "../images/desktop/icon-instagram.svg";
 import pinterestIcon from "../images/desktop/icon-pinterest.svg";
 import twitterIcon from "../images/desktop/icon-twitter.svg";
+import "../scss/App.scss";
 function Home() {
   return (
     <div className="container">
@@ -23,23 +24,51 @@ function Home() {
           <img src={logo} alt="logo" className="logo" />
           <nav className="header__nav">
             <ul>
-              <li>About</li>
-              <li>careers</li>
-              <li>Event</li>
-              <li>Products</li>
-              <li>Support</li>
+              <li>
+                <a href="#" target="_blank">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Events
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Products
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  Support
+                </a>
+              </li>
             </ul>
           </nav>
+          <div>
+          <button className='header__btn header__btn--primary'>Primary</button>
+          <button className='header__btn header__btn--secondary'>Secondary</button>
+          </div>
+          
+
         </div>
-        <p className="header__p">IMMERSIVE EXPERIENCES THAT DELIVER</p>
+        <p className="container__bigText container__bigText--white">
+          IMMERSIVE EXPERIENCES THAT DELIVER
+        </p>
       </header>
       <section className="vrSection">
         <img src={vrImage} alt="vrSection-image" className="vrSection__img" />
         <div className="vrSection__overlayDiv">
-          <h3 className="vrSection__overlayHeading">
+          <p className="container__bigText container__bigText--black">
             THE LEADER IN INTERACTIVE VR
-          </h3>
-          <p>
+          </p>
+          <p className="vrSection__p">
             Founded in 2011, loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -49,7 +78,9 @@ function Home() {
       </section>
       <section className="creationSection">
         <div className="creationSection__heading">
-          <h3 className="creationSection__headingText">OUR CREATIONS</h3>
+          <p className="container__bigText container__bigText--black">
+            OUR CREATIONS
+          </p>
           <button className="creationSection__btn">SEE ALL</button>
         </div>
         <div className="creations">
@@ -144,18 +175,20 @@ function Home() {
       <footer className="footer">
         <div className="footer__head">
           <img src={logo} alt="logo" className="logo" />
-          <a href="#" target="_blank">
-            <img src={facebookIcon} className="icon" />
-          </a>
-          <a href="#" target="_blank">
-            <img src={twitterIcon} className="icon" />
-          </a>
-          <a href="#" target="_blank">
-            <img src={pinterestIcon} className="icon" />
-          </a>
-          <a href="#" target="_blank">
-            <img src={instagramIcon} className="icon" />
-          </a>
+          <div className="icons">
+            <a href="#" target="_blank">
+              <img src={facebookIcon} className="icon" />
+            </a>
+            <a href="#" target="_blank">
+              <img src={twitterIcon} className="icon" />
+            </a>
+            <a href="#" target="_blank">
+              <img src={pinterestIcon} className="icon" />
+            </a>
+            <a href="#" target="_blank">
+              <img src={instagramIcon} className="icon" />
+            </a>
+          </div>
         </div>
         <div className="footer__foot">
           <ul>
@@ -166,7 +199,7 @@ function Home() {
             </li>
             <li>
               <a href="#" target="_blank">
-                Careerss
+                Careers
               </a>
             </li>
             <li>

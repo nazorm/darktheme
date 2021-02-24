@@ -1,0 +1,12 @@
+
+a{
+    text-decoration: none;
+    color: $white-color;
+   
+}
+a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(.98);
+    text-decoration: overline;
+}
