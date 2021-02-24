@@ -61,7 +61,7 @@
         width: 50%;
     }
     &__overlayDiv{
-      background-color: lighten($footer-color, 70%);
+      background-color: $footer-color;
       color: set-text-color($footer-color);
         text-align: start;
         width: 60%;
